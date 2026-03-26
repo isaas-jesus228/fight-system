@@ -8,11 +8,14 @@ public partial class Player : Entity
 	private int Speed = 20000;
 	[Export]
 	private int JumpForce = 1200;
+	[Export]
+	private int DashForce = 2500;
 
 	public override void _Ready()
 	{
 		_speed = Speed;
 		_jumpForce = JumpForce;
+		_dashForce = DashForce;
 
 		_state = new IdleState(this);
 	}
@@ -21,7 +24,11 @@ public partial class Player : Entity
 	{
 		_direction = Input.GetAxis("left_move", "right_move");
 
-		if (!IsOnFloor())
+		if (Input.IsActionPressed("dash"))
+		{
+			_state.Dash();
+		}
+		else if (!IsOnFloor())
 		{
 			_state.IdleFalling();
 

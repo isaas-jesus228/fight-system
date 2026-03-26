@@ -20,7 +20,7 @@ public partial class JumpState : State
 
     public override void Idle()
     {
-        _entity.SetState(new IdleState(_entity));
+        return;
     }
 
     public override void IdleFalling()

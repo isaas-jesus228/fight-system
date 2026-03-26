@@ -37,7 +37,7 @@ public partial class IdleState : State
 
     public override void Dash()
     {
-        return;
+        _entity.SetState(new DashState(_entity));
     }
 
     public override void Block()

@@ -17,7 +17,6 @@ public partial class IdleFallingState : State
 
         _entity.Velocity = new Vector2(direction * speed * (float)delta, _entity.Velocity.Y);
 
-
         Vector2 gravity = _entity.GetGravity();
 
         _entity.Velocity += gravity;
@@ -48,7 +47,7 @@ public partial class IdleFallingState : State
 
     public override void Dash()
     {
-        return;
+        _entity.SetState(new DashState(_entity));
     }
 
     public override void Block()
