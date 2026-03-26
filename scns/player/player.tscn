@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://d07vpu0pdct4h" path="res://scns/player/player.jpeg" id="1_qsjhc"]
 [ext_resource type="Script" uid="uid://dyccpgt0bv730" path="res://scripts/entity/player/Player.cs" id="1_v71y8"]
+[ext_resource type="Texture2D" uid="uid://c27il5k3tyfah" path="res://scns/player/place_holder.jpg" id="3_fpvlc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qsjhc"]
 size = Vector2(68, 136)
@@ -10,9 +11,15 @@ size = Vector2(68, 136)
 script = ExtResource("1_v71y8")
 
 [node name="Player" type="Sprite2D" parent="." unique_id=65026566]
+visible = false
 position = Vector2(1.9073486e-06, 1.1563301e-05)
 scale = Vector2(0.28375527, 0.9066667)
 texture = ExtResource("1_qsjhc")
+
+[node name="PlaceHolder" type="Sprite2D" parent="." unique_id=1531594662]
+position = Vector2(-1.3113022e-06, -3.0994415e-06)
+scale = Vector2(0.056666672, 0.11333333)
+texture = ExtResource("3_fpvlc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1486992251]
 shape = SubResource("RectangleShape2D_qsjhc")
