@@ -15,7 +15,7 @@ public partial class IdleFallingState : State
         float direction = _entity.GetDirection();
         float speed = _entity.GetSpeed();
 
-        _entity.Velocity += new Vector2(direction * speed * (float)delta, 0);
+        _entity.Velocity = new Vector2(direction * speed * (float)delta, _entity.Velocity.Y);
 
 
         Vector2 gravity = _entity.GetGravity();
@@ -35,7 +35,10 @@ public partial class IdleFallingState : State
 
     public override void Move()
     {
-        return;
+        if (_entity.IsOnFloor())
+        {
+            _entity.SetState(new MoveState(_entity));
+        }
     }
 
     public override void Jump()

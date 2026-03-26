@@ -24,18 +24,26 @@ public partial class Player : Entity
 		if (!IsOnFloor())
 		{
 			_state.IdleFalling();
+
+			GD.Print("Падаю");
 		}
 		else if (IsOnFloor() && Input.IsActionPressed("jump"))
 		{
 			_state.Jump();
+
+			GD.Print("Прыгаю");
 		}
 		else if (_direction != 0)
 		{
 			_state.Move();
+
+			GD.Print("Иду");
 		}
 		else
 		{
 			_state.Idle();
+
+			GD.Print("Стою");
 		}
 
 		_state.Update(delta);
