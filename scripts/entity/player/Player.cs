@@ -20,13 +20,15 @@ public partial class Player : Entity
 		_state = new IdleState(this);
 	}
 
-	public override void _Process(double delta)
+	public override void _PhysicsProcess(double delta)
 	{
 		_direction = Input.GetAxis("left_move", "right_move");
 
-		if (Input.IsActionPressed("dash"))
+		if (!IsDashed() && Input.IsActionJustPressed("dash"))
 		{
 			_state.Dash();
+
+			GD.Print("Дэшусь");
 		}
 		else if (!IsOnFloor())
 		{
@@ -34,7 +36,7 @@ public partial class Player : Entity
 
 			GD.Print("Падаю");
 		}
-		else if (IsOnFloor() && Input.IsActionPressed("jump"))
+		else if (IsOnFloor() && Input.IsActionJustPressed("jump"))
 		{
 			_state.Jump();
 

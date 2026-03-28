@@ -23,7 +23,7 @@ public partial class DashState : State
 
         //ПЕРЕДЕЛАТЬ
 
-        if (direction > 0)
+        if (direction >= 0)
         {
             if (_entity.Velocity.X <= 0)
             {
@@ -33,7 +33,7 @@ public partial class DashState : State
             }
         }
 
-        if (direction < 0)
+        if (direction <= 0)
         {
             if (_entity.Velocity.X >= 0)
             {
