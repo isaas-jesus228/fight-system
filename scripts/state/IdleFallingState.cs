@@ -42,7 +42,10 @@ public partial class IdleFallingState : State
 
     public override void Jump()
     {
-        return;
+        if (_entity.IsOnFloor())
+        {
+            _entity.SetState(new JumpState(_entity));
+        }
     }
 
     public override void Dash()

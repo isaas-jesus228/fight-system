@@ -11,6 +11,8 @@ public partial class Player : Entity
 	[Export]
 	private int DashForce = 2500;
 
+	private ActionBuffer _buffer = new ActionBuffer();
+
 	public override void _Ready()
 	{
 		_speed = Speed;
@@ -18,7 +20,15 @@ public partial class Player : Entity
 		_dashForce = DashForce;
 
 		_state = new IdleState(this);
+
+		AddChild(_buffer);
 	}
+
+	public override void _Process(double delta)
+	{
+		_buffer.Update();
+	}
+
 
 	public override void _PhysicsProcess(double delta)
 	{
@@ -36,7 +46,7 @@ public partial class Player : Entity
 
 			GD.Print("Падаю");
 		}
-		else if (IsOnFloor() && Input.IsActionJustPressed("jump"))
+		else if (IsOnFloor() && _buffer.Action == "jump")
 		{
 			_state.Jump();
 

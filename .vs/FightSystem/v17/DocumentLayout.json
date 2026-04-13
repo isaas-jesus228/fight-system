@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\bingus\\FightSystem\\fight-system\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B991166-E89D-4C7C-93D7-5EEBF10F670E}|FightSystem.csproj|e:\\bingus\\fightsystem\\fight-system\\scripts\\action_buffer\\actionbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B991166-E89D-4C7C-93D7-5EEBF10F670E}|FightSystem.csproj|solutionrelative:scripts\\action_buffer\\actionbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ActionBuffer.cs",
+              "DocumentMoniker": "E:\\bingus\\FightSystem\\fight-system\\scripts\\action_buffer\\ActionBuffer.cs",
+              "RelativeDocumentMoniker": "scripts\\action_buffer\\ActionBuffer.cs",
+              "ToolTip": "E:\\bingus\\FightSystem\\fight-system\\scripts\\action_buffer\\ActionBuffer.cs",
+              "RelativeToolTip": "scripts\\action_buffer\\ActionBuffer.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T20:35:27.382Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

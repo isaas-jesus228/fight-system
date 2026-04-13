@@ -12,6 +12,8 @@ public abstract partial class Entity : CharacterBody2D
     protected int _jumpForce;
     protected int _dashForce;
     protected float _direction;
+    protected int _health;
+
     protected bool _isDashed;
 
     public int GetSpeed() { return _speed; }
@@ -23,4 +25,11 @@ public abstract partial class Entity : CharacterBody2D
 
     public void SetState(State state) { _state = state; }
     public void SetIsDashed(bool isDashed) { _isDashed = isDashed; }
+
+    public void DealDamage(int damage)
+    {
+        _health -= damage;
+
+        if (_health == 0) { QueueFree(); }
+    }
 }
