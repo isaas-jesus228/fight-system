@@ -3,12 +3,123 @@
 [ext_resource type="Texture2D" uid="uid://d07vpu0pdct4h" path="res://scns/player/player.jpeg" id="1_qsjhc"]
 [ext_resource type="Script" uid="uid://dyccpgt0bv730" path="res://scripts/entity/player/Player.cs" id="1_v71y8"]
 [ext_resource type="Texture2D" uid="uid://c27il5k3tyfah" path="res://scns/player/place_holder.jpg" id="3_fpvlc"]
+[ext_resource type="Texture2D" uid="uid://cykytbr734lfb" path="res://scns/player/SwordSlash.png" id="4_bjvto"]
+[ext_resource type="Texture2D" uid="uid://itxiajs52ftq" path="res://scns/player/GreatSwordSlash.png" id="5_b0eh5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qsjhc"]
-size = Vector2(68, 136)
+size = Vector2(64.75, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b0eh5"]
+atlas = ExtResource("4_bjvto")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mvnwc"]
+atlas = ExtResource("4_bjvto")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aly18"]
+atlas = ExtResource("4_bjvto")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tug0m"]
+atlas = ExtResource("4_bjvto")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2psgp"]
+atlas = ExtResource("4_bjvto")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aqf3u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b0eh5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mvnwc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aly18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tug0m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2psgp")
+}],
+"loop": false,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqf3u"]
+atlas = ExtResource("5_b0eh5")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2bssk"]
+atlas = ExtResource("5_b0eh5")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6y13"]
+atlas = ExtResource("5_b0eh5")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwtla"]
+atlas = ExtResource("5_b0eh5")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eyb7p"]
+atlas = ExtResource("5_b0eh5")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tui2a"]
+atlas = ExtResource("5_b0eh5")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sg2to"]
+atlas = ExtResource("5_b0eh5")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u35e6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqf3u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2bssk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6y13")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bwtla")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eyb7p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tui2a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sg2to")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b0eh5"]
+size = Vector2(46, 99.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mvnwc"]
+size = Vector2(46, 113)
 
 [node name="Player" type="CharacterBody2D" unique_id=815680626]
+collision_layer = 2
+collision_mask = 7
 script = ExtResource("1_v71y8")
+metadata/_edit_vertical_guides_ = [-128.0]
 
 [node name="Player" type="Sprite2D" parent="." unique_id=65026566]
 visible = false
@@ -23,3 +134,40 @@ texture = ExtResource("3_fpvlc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1486992251]
 shape = SubResource("RectangleShape2D_qsjhc")
+
+[node name="AttacksGroup" type="Node2D" parent="." unique_id=1334047711]
+
+[node name="SwordAttack" type="AnimatedSprite2D" parent="AttacksGroup" unique_id=2015681158]
+visible = false
+position = Vector2(73.5, -7.6293945e-06)
+scale = Vector2(0.89062494, 2.1249998)
+sprite_frames = SubResource("SpriteFrames_aqf3u")
+frame = 4
+frame_progress = 1.0
+
+[node name="GreatSwordAttack" type="AnimatedSprite2D" parent="AttacksGroup" unique_id=610716585]
+visible = false
+position = Vector2(73.5, 0)
+scale = Vector2(0.89062494, 2.1249998)
+sprite_frames = SubResource("SpriteFrames_u35e6")
+animation = &"attack"
+frame = 6
+frame_progress = 1.0
+
+[node name="SwordShape" type="Area2D" parent="AttacksGroup" unique_id=1383721083]
+collision_layer = 4
+collision_mask = 2
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttacksGroup/SwordShape" unique_id=467398195]
+position = Vector2(77, 0)
+shape = SubResource("RectangleShape2D_b0eh5")
+
+[node name="GreatSwordShape" type="Area2D" parent="AttacksGroup" unique_id=1343805449]
+collision_layer = 4
+collision_mask = 2
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttacksGroup/GreatSwordShape" unique_id=602729299]
+position = Vector2(77, 0)
+shape = SubResource("RectangleShape2D_mvnwc")

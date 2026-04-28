@@ -17,7 +17,7 @@ public partial class ActionBuffer : Godot.Timer
 		{
 			Action = "jump";
 
-			Start(0.2);
+			Start(0.1);
 		}
 	}
 

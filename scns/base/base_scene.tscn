@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b5u5jv0sla7wo" path="res://scns/base/black.jpg" id="1_oqbkd"]
 [ext_resource type="PackedScene" uid="uid://ch0satwai2up7" path="res://scns/player/player.tscn" id="2_smhla"]
+[ext_resource type="PackedScene" uid="uid://bmfxyumncgtr1" path="res://scns/enemy/enemy.tscn" id="3_75dvb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_smhla"]
 size = Vector2(191.5, 964)
@@ -46,6 +47,9 @@ shape = SubResource("RectangleShape2D_75dvb")
 position = Vector2(1274, 245)
 shape = SubResource("RectangleShape2D_d1su3")
 
+[node name="Enemy" parent="." unique_id=113892011 instance=ExtResource("3_75dvb")]
+position = Vector2(902, 310)
+
 [node name="Player" parent="." unique_id=815680626 instance=ExtResource("2_smhla")]
-position = Vector2(570, 285)
+position = Vector2(222, 505)
 collision_layer = 2

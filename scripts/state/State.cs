@@ -5,7 +5,7 @@ public abstract partial class State : Node
 {
 	protected Entity _entity;
 
-	public State(Entity entity)
+	protected State(Entity entity)
 	{
 		_entity = entity;
 

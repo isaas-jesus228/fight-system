@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "E:\\bingus\\FightSystem\\fight-system\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6B991166-E89D-4C7C-93D7-5EEBF10F670E}|FightSystem.csproj|e:\\bingus\\fightsystem\\fight-system\\scripts\\weapon\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B991166-E89D-4C7C-93D7-5EEBF10F670E}|FightSystem.csproj|solutionrelative:scripts\\weapon\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6B991166-E89D-4C7C-93D7-5EEBF10F670E}|FightSystem.csproj|e:\\bingus\\fightsystem\\fight-system\\scripts\\action_buffer\\actionbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B991166-E89D-4C7C-93D7-5EEBF10F670E}|FightSystem.csproj|solutionrelative:scripts\\action_buffer\\actionbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B991166-E89D-4C7C-93D7-5EEBF10F670E}|FightSystem.csproj|e:\\bingus\\fightsystem\\fight-system\\scripts\\entity\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B991166-E89D-4C7C-93D7-5EEBF10F670E}|FightSystem.csproj|solutionrelative:scripts\\entity\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B991166-E89D-4C7C-93D7-5EEBF10F670E}|FightSystem.csproj|e:\\bingus\\fightsystem\\fight-system\\scripts\\entity\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B991166-E89D-4C7C-93D7-5EEBF10F670E}|FightSystem.csproj|solutionrelative:scripts\\entity\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B991166-E89D-4C7C-93D7-5EEBF10F670E}|FightSystem.csproj|e:\\bingus\\fightsystem\\fight-system\\scripts\\weapon\\greatsword\\greatsword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B991166-E89D-4C7C-93D7-5EEBF10F670E}|FightSystem.csproj|solutionrelative:scripts\\weapon\\greatsword\\greatsword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B991166-E89D-4C7C-93D7-5EEBF10F670E}|FightSystem.csproj|e:\\bingus\\fightsystem\\fight-system\\scripts\\weapon\\sword\\sword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B991166-E89D-4C7C-93D7-5EEBF10F670E}|FightSystem.csproj|solutionrelative:scripts\\weapon\\sword\\sword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +34,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "E:\\bingus\\FightSystem\\fight-system\\scripts\\entity\\Entity.cs",
+              "RelativeDocumentMoniker": "scripts\\entity\\Entity.cs",
+              "ToolTip": "E:\\bingus\\FightSystem\\fight-system\\scripts\\entity\\Entity.cs",
+              "RelativeToolTip": "scripts\\entity\\Entity.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAIA9wCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T17:22:29.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Sword.cs",
+              "DocumentMoniker": "E:\\bingus\\FightSystem\\fight-system\\scripts\\weapon\\sword\\Sword.cs",
+              "RelativeDocumentMoniker": "scripts\\weapon\\sword\\Sword.cs",
+              "ToolTip": "E:\\bingus\\FightSystem\\fight-system\\scripts\\weapon\\sword\\Sword.cs",
+              "RelativeToolTip": "scripts\\weapon\\sword\\Sword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T17:09:12.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GreatSword.cs",
+              "DocumentMoniker": "E:\\bingus\\FightSystem\\fight-system\\scripts\\weapon\\greatsword\\GreatSword.cs",
+              "RelativeDocumentMoniker": "scripts\\weapon\\greatsword\\GreatSword.cs",
+              "ToolTip": "E:\\bingus\\FightSystem\\fight-system\\scripts\\weapon\\greatsword\\GreatSword.cs",
+              "RelativeToolTip": "scripts\\weapon\\greatsword\\GreatSword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T17:00:17.393Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "E:\\bingus\\FightSystem\\fight-system\\scripts\\weapon\\Weapon.cs",
+              "RelativeDocumentMoniker": "scripts\\weapon\\Weapon.cs",
+              "ToolTip": "E:\\bingus\\FightSystem\\fight-system\\scripts\\weapon\\Weapon.cs",
+              "RelativeToolTip": "scripts\\weapon\\Weapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T17:02:41.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ActionBuffer.cs",
               "DocumentMoniker": "E:\\bingus\\FightSystem\\fight-system\\scripts\\action_buffer\\ActionBuffer.cs",
               "RelativeDocumentMoniker": "scripts\\action_buffer\\ActionBuffer.cs",
               "ToolTip": "E:\\bingus\\FightSystem\\fight-system\\scripts\\action_buffer\\ActionBuffer.cs",
               "RelativeToolTip": "scripts\\action_buffer\\ActionBuffer.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T20:35:27.382Z",
+              "WhenOpened": "2026-04-28T16:00:31.622Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Player.cs",
+              "DocumentMoniker": "E:\\bingus\\FightSystem\\fight-system\\scripts\\entity\\player\\Player.cs",
+              "RelativeDocumentMoniker": "scripts\\entity\\player\\Player.cs",
+              "ToolTip": "E:\\bingus\\FightSystem\\fight-system\\scripts\\entity\\player\\Player.cs",
+              "RelativeToolTip": "scripts\\entity\\player\\Player.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAEYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T15:28:58.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
